@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fde2e4;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #d90429;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#evetBtn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#hayirBtn {
+    background-color: #f44336;
+    color: white;
+    position: relative; /* Hareket için gerekli */
+}
+
+#mesaj {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d90429;
+    font-weight: bold;
+}
+
+.final-message img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.question-gif {
+    max-width: 200px; /* Boyutu ayarlayabilirsiniz */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.particle {
+    position: fixed;
+    top: -20px;
+    font-size: 24px;
+    animation: fall linear;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+        opacity: 0;
+    }
+}
